@@ -19,9 +19,9 @@ include "header.php";
 					
 						<!-- TEST PANEL -->
 
-						<div class="panel panel-default">
+						<div class="panel panel-info">
 						  	<div class="panel-heading">
-						    	<h3 class="panel-title"># 605615613</h3>
+						    	<a href="#"><h3 class="panel-title"># 605615613</h3></a>
 						  	</div>
 							<div class="panel-body">
 							  	 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

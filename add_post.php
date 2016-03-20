@@ -32,7 +32,7 @@ if (isset($_POST["submit_content"])) {
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="panel panel-default">
+						<div class="panel panel-success">
 						  	<div class="panel-heading">
 						    	<h3 class="panel-title">Добавьте ваше признание</h3>
 						  	</div>
