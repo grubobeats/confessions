@@ -1,5 +1,7 @@
 <?php
 require "/assets/config.php";
+// Insert Header
+include "header.php";
 
 
 if (isset($_POST["submit_content"])) {
@@ -20,34 +22,11 @@ if (isset($_POST["submit_content"])) {
 
 ?>
 
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-	<title>Confessions: Add your confession</title>
-</head>
-<body>
-
-<br>
-<div class="container-fluid">
-
-	<form action="add_post.php" method="POST" role="form">
-		
-		<div class="row">
-			<div class="col-sm-offset-2 col-sm-8">
-				
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="jumbotron">
-						  <h1>Feel free.</h1>
-						  <p>We are not storing any data from your computer. We respect you privacy more than all others. So fell free to post anything.</p>
-						  </div>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="index.php">Popular</a></li>
-						  <li class="active">Add your confession</li>
+						  <li><a href="index.php">Популярные признания</a></li>
+						  <li class="active">Добавьте ваше признание</li>
 						</ol>
 					</div>
 				</div>
@@ -55,34 +34,25 @@ if (isset($_POST["submit_content"])) {
 					<div class="col-sm-12">
 						<div class="panel panel-default">
 						  	<div class="panel-heading">
-						    	<h3 class="panel-title">Add your confession</h3>
+						    	<h3 class="panel-title">Добавьте ваше признание</h3>
 						  	</div>
 							<div class="panel-body">
 							  	 <div class="col-sm-4">
-							  	 	<legend>Priacy protection:</legend>
+							  	 	<legend>Защита личных данных:</legend>
 								    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 								    tempor incididunt ut labore et dolore magna aliqua.
 								</div>
 							  	<div class="col-sm-8">
-								    <legend>Confession:</legend>
+								    <legend>Признание:</legend>
 		
 									<div class="form-group">
 										<textarea name="content" id="inputContent" class="form-control" rows="3" required="required"></textarea>
 									</div>
-									<button type="submit" name="submit_content" class="btn btn-primary pull-right">Submit confession</button>
+									<button type="submit" name="submit_content" class="btn btn-primary pull-right">Добавить признание</button>
 							    </div> 
 							</div>
 						</div>
-						<p class="text-muted text-right" style="margin-bottom: 55px !important;">Confessions Inc 2016</p>
 					</div>
 				</div>
-			</div>
-	</form>
-	</div>
 
-
-
-
-
-</body>
-</html>
+<?php include "footer.php"; ?>

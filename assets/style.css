@@ -1,3 +1,13 @@
 body {
 	background-color: #2c3e50;
 }
+
+.jumbotron {
+	background-image: url("http://cdn.c.photoshelter.com/img-get2/I0000kV31NiNeroE/fit=1000x750/Moscow-River-Winter.jpg");
+	background-size: 100%;
+	background-position: 0 -54;
+}
+
+.mysearch {
+	padding: 9px 15px;
+}

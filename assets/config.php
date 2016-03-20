@@ -15,10 +15,6 @@ if (!$conn) {
 	//echo "Connected successfullyto database: " . $database;
 }
 
-// Insert Header
-include "header.php";
-
-
 
 ?> 
 
