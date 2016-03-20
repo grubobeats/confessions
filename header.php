@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Confessions</a>
+      <a class="navbar-brand" href="index.php">Confessions.com</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,7 +19,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="add_post.php"><i class="fa fa-file-text-o"></i> Add your confession</a></li>
+        <li style="font-weight: 700"><a href="add_post.php"><i class="fa fa-plus-circle"></i> Add your confession</a></li>
         <form class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">

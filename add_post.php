@@ -69,10 +69,7 @@ if (isset($_POST["submit_content"])) {
 									<div class="form-group">
 										<textarea name="content" id="inputContent" class="form-control" rows="3" required="required"></textarea>
 									</div>
-								
-									<div class="col-sm-12 text-right">
-										<button type="submit" name="submit_content" class="btn btn-primary">Submit confession</button>
-									</div>
+									<button type="submit" name="submit_content" class="btn btn-primary pull-right">Submit confession</button>
 							    </div> 
 							</div>
 						</div>
