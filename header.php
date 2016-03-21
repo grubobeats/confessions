@@ -1,13 +1,13 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Confessions: Add your confession</title>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-bottom">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -48,7 +48,7 @@
     <div class="row">
       <div class="col-sm-offset-2 col-sm-8">
         <div class="row">
-          <div class="col-sm-12" style="padding-top: 20px;">
+          <div class="col-sm-12" style="padding-top: 80px;">
             <div class="jumbotron">
               <h1>
                 Признания.ру

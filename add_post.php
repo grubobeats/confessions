@@ -3,15 +3,18 @@ require "/assets/config.php";
 // Insert Header
 include "header.php";
 
-
 if (isset($_POST["submit_content"])) {
 	$content = $_POST["content"];
-	echo $content;
+	$unique_id = rand(1000000000000000,9999999999999999);
+	//delate after develop @vladan
+	$likes = rand(1,300);
+	$dislikes = rand(0,50);
 
-	$sql = "INSERT INTO posts (content) VALUES ('$content')";
+	$sql = "INSERT INTO posts (content, unique_id, likes, dislikes) VALUES ('$content', '$unique_id', '$likes', '$dislikes')";
 
 	if (mysqli_query($conn, $sql)) {
-	    echo "New record created successfully";
+	    //echo "New record created successfully";
+	    header('Location: index.php');
 	} else {
 	    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}
@@ -21,7 +24,7 @@ if (isset($_POST["submit_content"])) {
 
 
 ?>
-
+			<form method = "post" action = "add_post.php">
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
@@ -54,5 +57,6 @@ if (isset($_POST["submit_content"])) {
 						</div>
 					</div>
 				</div>
+			</form>
 
 <?php include "footer.php"; ?>
