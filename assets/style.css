@@ -7,6 +7,11 @@ body {
 	background-image: url("http://cdn.c.photoshelter.com/img-get2/I0000kV31NiNeroE/fit=1000x750/Moscow-River-Winter.jpg");
 	background-size: 100%;
 	background-position: 0 -54;
+	padding-bottom: 150px;
+}
+
+.jumbotron h1 {
+	margin-top: -20px;
 }
 
 .mysearch {
@@ -15,4 +20,8 @@ body {
 
 .footer_about {
 	padding: 0 20px;
+}
+
+.panel {
+	opacity: 0.8;
 }

@@ -5,10 +5,12 @@ include "header.php";
 
 if (isset($_POST["submit_content"])) {
 	$content = $_POST["content"];
-	$unique_id = rand(1000000000000000,9999999999999999);
+	$unique_id = rand(3399999999999999,9999999999999999);
+
+
 	//delate after develop @vladan
-	$likes = rand(1,300);
-	$dislikes = rand(0,50);
+	$likes = rand(1,400);
+	$dislikes = rand(0,100);
 
 	$sql = "INSERT INTO posts (content, unique_id, likes, dislikes) VALUES ('$content', '$unique_id', '$likes', '$dislikes')";
 

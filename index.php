@@ -5,7 +5,7 @@ include "header.php";
 
 // Read from database
 
-$read_posts = "SELECT * FROM `posts` ORDER BY `id`";
+$read_posts = "SELECT * FROM `posts` ORDER BY `id` DESC";
 $resoult = mysqli_query($conn, $read_posts);
 
 
@@ -38,21 +38,23 @@ $resoult = mysqli_query($conn, $read_posts);
 								$dislikes = $row["dislikes"];
 								$comments_counter = $row["comments_counter"];
 								$unique_id = $row["unique_id"];
+								$post_id = $row["id"];
 							?>
 							<div class="panel panel-info">
 						  	<div class="panel-heading">
 						    	<a href="#"><h3 class="panel-title"><?php echo "#" . $unique_id; ?></h3></a>
 						  	</div>
 							<div class="panel-body">
-							  	 <?php echo $content; ?>			   
+							  	 <?php echo $content; ?>	
+							  	 <input id="id_holder" type="hidden" value="<?php echo $post_id; ?>"></input>		   
 							</div>
 							<div class="panel-footer">
 								<div class="row">
 									<div class="col-sm-7">
 										<label>What you think?</label>
-										<div class="btn-group btn-group-justified" role="group" aria-label="...">
-											<div class="btn-group" role="group">
-												<button type="button" class="btn btn-default"><i class="fa fa-thumbs-up"></i> I approve <span class="badge"><?php echo $likes;?></span></button>
+										<div class="btn-group btn-group-justified" role="group" aria-label="..." >
+											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
+												<button type="button" class="btn btn-default" id="like" class="like" onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> I approve <span class="badge" id="likes_num"><?php echo $likes;?></span></button>
 											</div>
 											<div class="btn-group" role="group">
 												<button type="button" class="btn btn-default"><i class="fa fa-thumbs-down"></i> I judge you! <span class="badge"><?php echo $dislikes;?></span></button>
@@ -98,4 +100,12 @@ $resoult = mysqli_query($conn, $read_posts);
 				</div>
 			</form>
 <!-- FOOTER -->
+<script>
+	<?php 
+		echo "var post_id = " . $post_id;
+	?>
+
+
+
+</script>
 <?php include "footer.php" ?>
