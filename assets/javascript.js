@@ -1,4 +1,25 @@
- new WOW().init();
+new WOW().init();
+
+function postadder(caller)  {
+	var address = "assets/ajax_add_post.php";
+	$(caller).html("Adding confession...");
+	var content_text = document.getElementById("inputContent").value;
+	$.ajax({
+		type: 	"POST",
+		url: 	address,
+		data: { content: content_text },
+		success: function (msg) { 
+			$(caller).html("Confession added."); 
+			$(caller).attr("disabled", "disabled");
+			var post_id = msg;
+			var address = "sucess.php?pid=" + post_id;
+			window.location.href= address;
+		},
+		error: 	function () {
+			console.log('error');
+		}
+	});
+}
  
 function likePost(caller)  {
 	var post_id = caller.parentElement.getAttribute('post-id');
@@ -10,7 +31,7 @@ function likePost(caller)  {
 		url: 	address,
 		data: { data: post_id },
 		success: function (msg) { 
-			$(caller).html("You approved. <span class='badge'>"+ msg + "</span>"); 
+			$(caller).html("<b>You approved.</b> <span class='badge'>"+ msg + "</span>"); 
 			$(caller).parent().parent().children().children(".like_dislike").attr("disabled", "disabled");
 		},
 		error: 	function () {
@@ -29,7 +50,7 @@ function dislike(caller)  {
 		url: 	address,
 		data: { data: post_id },
 		success: function (msg) { 
-			$(caller).html("You judged it. <span class='badge'>"+ msg + "</span>"); 
+			$(caller).html("<b>You judged it.</b> <span class='badge'>"+ msg + "</span>"); 
 			$(caller).parent().parent().children().children(".like_dislike").attr("disabled", "disabled");
 
 		},
@@ -42,14 +63,14 @@ function dislike(caller)  {
 function comment(caller) {
 	var post_id = caller.parentElement.getAttribute('post-id');
 	var address = "single_post.php?pid=" + post_id;
-	 window.location.href= address;
+	window.location.href= address;
 }
 
 function postComment(unique_id)  {
 	var post_id = unique_id;
 	var comment = document.getElementById("comment").value;
 	var button = document.getElementById("add_comment");
-	//alert(post_id);
+	var if_no_comment = document.getElementById("if_no_comment");
 	var address = "assets/ajax_add_comment.php";
 	
 	if (comment === "") {
@@ -65,10 +86,17 @@ function postComment(unique_id)  {
 				$("#table").html(resoult); 
 				button.disabled = true;
 				button.innerHTML = "Thank you for your comment.";
+				$(if_no_comment).hide();
 			},
 			error: 	function () {
 				$("#table").html("Error... Error!"); 
 			}
 		});
 	}
+}
+
+function searchById() {
+	var post_id = document.getElementById("search_input").value;
+	var address = "single_post.php?pid=" + post_id;
+	window.location.href= address;
 }

@@ -31,13 +31,13 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li style="font-weight: 700"><a href="add_post.php"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
-        <form class="navbar-form navbar-left" role="search">
+        <div class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" class="form-control" placeholder="Search by ID" id="search_input">
           </div>
-          <button type="submit" class="btn btn-default mysearch"><span class="glyphicon glyphicon-search"></span>
+          <button type="submit" class="btn btn-default mysearch" onclick="searchById()"><span class="glyphicon glyphicon-search"></span>
  </button>
-        </form>
+        </div>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

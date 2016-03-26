@@ -1,5 +1,5 @@
 <?php
-require "/assets/config.php";
+require "assets/config.php";
 // Insert Header
 include "header.php";
 
