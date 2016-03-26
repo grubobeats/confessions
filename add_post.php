@@ -29,7 +29,7 @@ include "header.php";
 								    <legend>Признание:</legend>
 		
 									<div class="form-group">
-										<textarea name="content" id="inputContent" class="form-control" rows="3" required="required"></textarea>
+										<textarea name="content" id="inputContent" class="form-control" rows="5" required="required"></textarea>
 									</div>
 									<button type="submit" name="submit_content" class="btn btn-primary pull-right" onclick="postadder(this)">Добавить признание</button>
 							    </div> 

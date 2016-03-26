@@ -3,6 +3,22 @@ require "assets/config.php";
 // Insert Header
 include "header.php";
 
+
+if (isset($_POST["sendmail"])) {
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
+	$to = "vladan.paunovic.bg@gmail.com";
+	$subject = "Message from: Moyatajna.ru";
+	$headers = "From: contact@moyatajna.ru";
+	$txt = "You have new message from site www.moyatajna.ru\nContact name: " . $name . "\nEmail: " . $email . "\nMessage: " . $message;
+
+	mail($to,$subject,$txt, $headers);
+
+	$success =  "<p class='text-success'>Your message sent successfully.</p>";
+}
+
+
 ?>
 			
 				<div class="row">
@@ -15,7 +31,7 @@ include "header.php";
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="panel panel-success wow fadeIn" data-wow-duration="2s">
+						<div class="panel panel-success wow fadeIn" data-wow-duration="3s">
 						  	<div class="panel-heading">
 						    	<h3 class="panel-title">Contact</h3>
 						  	</div>
@@ -26,21 +42,24 @@ include "header.php";
 								    tempor incididunt ut labore et dolore magna aliqua.
 								</div>
 							  	<div class="col-sm-8">
+							  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
 								    <legend>Your message:</legend>
 		
 									<div class="form-group">
 										<label>Your name:</label>
-										<input name="content" id="inputName" class="form-control" rows="3" required="required"></input>
+										<input name="name" id="name" class="form-control" rows="3" required="required"></input>
 									</div>
 									<div class="form-group">
 										<label>Your e-mail:</label>
-										<input name="content" id="inputEmail" class="form-control" rows="3" required="required"></input>
+										<input name="email" id="email" class="form-control" rows="3" required="required"></input>
 									</div>
 									<div class="form-group">
 										<label>Message:</label>
-										<textarea name="content" id="inputMessage" class="form-control" rows="3" required="required"></textarea>
+										<textarea name="message" id="message" class="form-control" rows="3" required="required"></textarea>
 									</div>
-									<button type="submit" name="submit_content" class="btn btn-primary pull-right" onclick="postadder(this)">Добавить признание</button>
+									<button type="submit" name="sendmail" class="btn btn-primary pull-right">Ok, contact us</button>
+									<?php $success ?>
+							    </form>
 							    </div> 
 							</div>
 						</div>

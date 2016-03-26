@@ -100,7 +100,7 @@ $resoult = mysqli_query($conn, $read_posts);
 							}
 						}
 						else {
-							echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"> No posts</span></div>';
+							echo '<div class="alert alert-warning text-center" role="alert"><span class="glyphicon glyphicon-warning-sign"></span> No posts</div>';
 						}
 						?>
 						
