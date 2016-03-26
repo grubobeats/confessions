@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Confessions: Add your confession</title>
+  <title>Моя тайна: Add your confession</title>
 
   
 </head>
@@ -19,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Признания.ру</a>
+      <a class="navbar-brand" href="index.php">Моя тайна.ру</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +53,7 @@
           <div class="col-sm-12" style="padding-top: 80px;">
             <div class="jumbotron">
               <h1>
-                Признания.ру
+                Моя тайна.ру
               </h1>
               <p>
                 Don't just think, say.

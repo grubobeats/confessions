@@ -4,20 +4,21 @@ require "/assets/config.php";
 include "header.php";
 
 // Read from database
-
-$read_posts = "SELECT * FROM `posts` ORDER BY `id` DESC";
-$resoult = mysqli_query($conn, $read_posts);
-
-
+$unique_post_id = $_GET["pid"];
+$read_posts = "SELECT * FROM `posts` WHERE unique_id = '$unique_post_id';";
+$read_comments = "SELECT * FROM `comments` WHERE unique_post_id = '$unique_post_id' ORDER BY `id` DESC;";
+$resoult_post = mysqli_query($conn, $read_posts);
+$resoult_comments = mysqli_query($conn, $read_comments);
 ?>
 
 
 <!-- HEADER -->
-			<form action="add_post.php" method="POST" role="form">
+			<form action="single_post.php" method="POST" role="form">
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-						  <li class="active">Популярные признания</li>
+						  <li><a href="index.php">Популярные признания</a></li>
+						  <li class="active"><?php echo "#" . $unique_post_id; ?></li>
 						</ol>
 					</div>
 				</div>
@@ -26,8 +27,8 @@ $resoult = mysqli_query($conn, $read_posts);
 					
 						<!-- TEST PANEL -->
 						<?php
-						if (mysqli_num_rows($resoult) > 0) {						
-							while ($row = mysqli_fetch_array($resoult)) {
+						if (mysqli_num_rows($resoult_post) > 0) {
+							while ($row = mysqli_fetch_array($resoult_post)) {
 								$id = $row["id"];
 								$content = $row["content"];
 								$likes = $row["likes"];
@@ -35,23 +36,20 @@ $resoult = mysqli_query($conn, $read_posts);
 								$comments_counter = $row["comments_counter"];
 								$unique_id = $row["unique_id"];
 								$post_id = $row["id"];
-								$date = $row["date"];
-								$time = $row["time"];
 
 								$q_get_comments = "SELECT COUNT(`comment`) AS get_comments FROM `comments` WHERE `unique_post_id` = '$unique_id';";
 								$result_get_comments = mysqli_query($conn, $q_get_comments);
 								$get_comments_row   = mysqli_fetch_assoc($result_get_comments);
 								$get_comments = $get_comments_row['get_comments'];
 
+								
+							}
+						?>
 
-							?>
+						<!-- Post -->
 						<div class="panel panel-info wow fadeIn" data-wow-duration="2s">
 						  	<div class="panel-heading">
-						    	<a href="single_post.php?pid=<?php echo $unique_id; ?>">
-							    	<h3 class="panel-title pull-left"><?php echo "#" . $unique_id; ?></h3>
-						    	</a>
-						    	<h3 class="panel-title pull-right"><?php echo $date . " / " . $time; ?></h3>
-						    	<div class="clearfix"></div>
+						    	<h3 class="panel-title"><?php echo "#" . $unique_id; ?></h3>
 						  	</div>
 							<div class="panel-body">
 							  	 <?php echo $content; ?>	
@@ -90,14 +88,80 @@ $resoult = mysqli_query($conn, $read_posts);
 								</div>
 							</div>
 						</div>
+						<!-- / Post -->
 
-						<!-- ./ TEST PANEL END -->
+						<!-- Comments & Add comment field -->
+						<div class="row">
+							<div class="col-sm-4">
+
+								<div class="panel panel-info wow fadeIn" data-wow-duration="2s">
+								  	<div class="panel-heading">
+								    	<h3 class="panel-title">Add comment</h3>
+								  	</div>
+									<div class="panel-body">
+										<div class="row">
+
+											<div class="col-sm-12">
+												 <div class="form-group">
+												  <label for="comment">Add your comment:</label>
+												  <textarea class="form-control" rows="3" id="comment"></textarea>
+												 
+												</div>
+												 <button type="button" class="btn btn-default" id="add_comment" style="width: 100%" onclick="postComment(<?php echo $unique_id; ?>)">Add comment</button>
+												 <br>
+											</div>
+										</div>	
+   
+									</div>
+								</div>
+
+							</div>
+							<div class="col-sm-8">
+								<div class="panel panel-info wow fadeIn" data-wow-duration="2s">
+								  	<div class="panel-heading">
+								    	<h3 class="panel-title">Comments</h3>
+								  	</div>
+									<div class="panel-body">
+									
+									</div>
+								  	<table class="table" id="table">
+										<?php
+
+										if (mysqli_num_rows($resoult_comments) > 0) {
+											while ($row = mysqli_fetch_array($resoult_comments)) {
+												$comment_id = $row["id"];
+												$content_uid = $row["unique_post_id"];
+												$comment_comment = $row["comment"];
+												$comment_date = $row["date"];
+												$comment_time = $row["time"];	
+										?>
+										<tr>
+											<td width="70%"><?php echo $comment_comment ?></td>
+											<td align="center"><?php echo $comment_date ?><br><?php echo substr($comment_time, 0, 8) ?></td>
+										<tr>
+										<?php
+											}
+										}
+										else {
+											echo "<div class='alert alert-info' role='alert'>Unfortunately, we still don't have comments for this secret. Feel free to add one. It is also anonymous.</div>";
+										}
+										?>
+									</table>
+								</div>
+							</div>
+						</div>
+						<!-- / Comments -->
 
 
 
 
-							<?php
-							}
+
+
+
+
+
+
+						<?php
 						}
 						else {
 							echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"> No posts</span></div>';

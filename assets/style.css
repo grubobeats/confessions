@@ -25,3 +25,7 @@ body {
 .panel {
 	opacity: 0.8;
 }
+
+.table tbody > tr > td {
+	padding: 10px 20px;
+}

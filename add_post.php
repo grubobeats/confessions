@@ -12,7 +12,7 @@ if (isset($_POST["submit_content"])) {
 	$likes = rand(1,400);
 	$dislikes = rand(0,100);
 
-	$sql = "INSERT INTO posts (content, unique_id, likes, dislikes) VALUES ('$content', '$unique_id', '$likes', '$dislikes')";
+	$sql = "INSERT INTO posts (content, unique_id, likes, dislikes, date, time) VALUES ('$content', '$unique_id', '$likes', '$dislikes', CURDATE(), CURTIME())";
 
 	if (mysqli_query($conn, $sql)) {
 	    //echo "New record created successfully";
@@ -37,7 +37,7 @@ if (isset($_POST["submit_content"])) {
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="panel panel-success">
+						<div class="panel panel-success wow fadeIn" data-wow-duration="2s">
 						  	<div class="panel-heading">
 						    	<h3 class="panel-title">Добавьте ваше признание</h3>
 						  	</div>
