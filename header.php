@@ -4,6 +4,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Моя тайна: Add your confession</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
 </head>
 <body>
@@ -26,7 +29,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="index.php"><i class="fa fa-fire"></i> Популярные</a></li>
-        <li><a href="#"><i class="fa fa-clock-o"></i> Новейший</a></li>
+        <!-- <li><a href="#"><i class="fa fa-clock-o"></i> Новейший</a></li> -->
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -53,11 +56,11 @@
           <div class="col-sm-12" style="padding-top: 80px;">
             <div class="jumbotron">
               <h1>
-                Моя тайна.ру
+                Признания
               </h1>
-              <p>
-                Don't just think, say.
-              </p>
-              </div>
+              <blockquote>
+                <p>Не думай, скажи!</p>
+              </blockquote>
+            </div>
           </div>
         </div>

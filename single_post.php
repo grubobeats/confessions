@@ -61,13 +61,19 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 										<label>What you think?</label>
 										<div class="btn-group btn-group-justified" role="group" aria-label="..." >
 											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
+												<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Moyatajna.ru. Признания - Не думай, скажи!">
 												<button type="button" class="btn btn-default like_dislike" id="like" class="like" onclick="likePost(this)"><i class="fa fa-thumbs-up"></i> I approve <span class="badge" id="likes_num"><?php echo $likes;?></span></button>
+												</a>
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
+												<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>">
 												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i> I judge you! <span class="badge"><?php echo $dislikes;?></span></button>
+												</a>
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
-												<button type="button" class="btn btn-default" onclick="comment(this)"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
+												<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>">
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
+												</a>
 											</div>
 										</div>
 									</div>

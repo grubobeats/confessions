@@ -69,7 +69,7 @@ $resoult = mysqli_query($conn, $read_posts);
 												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i> I judge you! <span class="badge"><?php echo $dislikes;?></span></button>
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
-												<button type="button" class="btn btn-default" onclick="comment(this)"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
 											</div>
 										</div>
 									</div>
@@ -77,13 +77,13 @@ $resoult = mysqli_query($conn, $read_posts);
 										<label class="pull-right">Share on:</label>
 										<div class="btn-group btn-group-justified" role="group" aria-label="...">
 											<div class="btn-group" role="group">
-											<button type="button" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook</button>
+											<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Moyatajna.ru. Признания - Не думай, скажи!"><button type="button" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook</button></a>
 											</div>											
 											<div class="btn-group" role="group">
-											<button type="button" class="btn btn-default"><i class="fa fa-vk"></i> VKontakt</button>
+											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>"><button type="button" class="btn btn-default"><i class="fa fa-vk"></i> VKontakt</button></a>
 											</div>
 											<div class="btn-group" role="group">
-											<button type="button" class="btn btn-default"><i class="fa fa-twitter"></i> Twitter</button>
+											<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>"><button type="button" class="btn btn-default"><i class="fa fa-twitter"></i> Twitter</button></a>
 											</div>
 										</div>
 									</div>
@@ -117,4 +117,4 @@ $resoult = mysqli_query($conn, $read_posts);
 
 
 </script>
-<?php include "footer.php" ?>
+<?php require "footer.php"; ?>
