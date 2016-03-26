@@ -1,5 +1,5 @@
 <?php
-require "/assets/config.php";
+require "assets/config.php";
 // Insert Header
 include "header.php";
 
@@ -143,7 +143,7 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 											}
 										}
 										else {
-											echo "<div class='alert alert-info' role='alert'>Unfortunately, we still don't have comments for this secret. Feel free to add one. It is also anonymous.</div>";
+											echo "<div class='alert alert-info' role='alert' id='if_no_comment'>Unfortunately, we still don't have comments for this secret. Feel free to add one. It is also anonymous.</div>";
 										}
 										?>
 									</table>
@@ -152,19 +152,10 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 						</div>
 						<!-- / Comments -->
 
-
-
-
-
-
-
-
-
-
 						<?php
 						}
 						else {
-							echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"> No posts</span></div>';
+							echo '<div class="alert alert-warning" role="alert"><span class="glyphicon glyphicon-warning-sign"></span> Sorry, but unfortunately there are no posts with ID number that you entered. Please, check ID number and try again.</div>';
 						}
 						?>
 						
@@ -173,12 +164,4 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 				</div>
 			</form>
 <!-- FOOTER -->
-<script>
-	<?php 
-		echo "var post_id = " . $post_id;
-	?>
-
-
-
-</script>
 <?php include "footer.php" ?>

@@ -1,32 +1,10 @@
 <?php
-require "/assets/config.php";
+require "assets/config.php";
 // Insert Header
 include "header.php";
 
-if (isset($_POST["submit_content"])) {
-	$content = $_POST["content"];
-	$unique_id = rand(3399999999999999,9999999999999999);
-
-
-	//delate after develop @vladan
-	$likes = rand(1,400);
-	$dislikes = rand(0,100);
-
-	$sql = "INSERT INTO posts (content, unique_id, likes, dislikes, date, time) VALUES ('$content', '$unique_id', '$likes', '$dislikes', CURDATE(), CURTIME())";
-
-	if (mysqli_query($conn, $sql)) {
-	    //echo "New record created successfully";
-	    header('Location: index.php');
-	} else {
-	    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-	}
-}
-
-
-
-
 ?>
-			<form method = "post" action = "add_post.php">
+			
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
@@ -53,12 +31,12 @@ if (isset($_POST["submit_content"])) {
 									<div class="form-group">
 										<textarea name="content" id="inputContent" class="form-control" rows="3" required="required"></textarea>
 									</div>
-									<button type="submit" name="submit_content" class="btn btn-primary pull-right">Добавить признание</button>
+									<button type="submit" name="submit_content" class="btn btn-primary pull-right" onclick="postadder(this)">Добавить признание</button>
 							    </div> 
 							</div>
 						</div>
 					</div>
 				</div>
-			</form>
+
 
 <?php include "footer.php"; ?>

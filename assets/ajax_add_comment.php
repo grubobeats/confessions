@@ -4,9 +4,9 @@
 	$post_id = $_POST["unique_id"];
 
 	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$database = "confessions";
+	$username = "beatmark_vladan";
+	$password = "Vladan063";
+	$database = "beatmark_confessions";
 	$conn = mysqli_connect($servername, $username, $password,$database);
 	if (!$conn) {
 	    die("Connection failed during the reason: " . mysqli_connect_error());
