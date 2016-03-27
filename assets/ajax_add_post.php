@@ -22,6 +22,13 @@
 
 	if (mysqli_query($conn, $sql)) {
 	    echo $unique_id1;
+
+		$to = "moyatajna@yandex.ru";
+		$subject = "New post on: Moyatajna.ru";
+		$headers = "From: contact@moyatajna.ru";
+		$txt = "Someone posted something on site www.moyatajna.ru\nConfession ID: " . $unique_id1 . "\nConfession content: " . $content;
+
+		mail($to,$subject,$txt, $headers);
 	} else {
 	    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 	}

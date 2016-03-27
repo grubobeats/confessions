@@ -8,7 +8,7 @@ if (isset($_POST["sendmail"])) {
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$message = $_POST["message"];
-	$to = "vladan.paunovic.bg@gmail.com";
+	$to = "moyatajna@yandex.ru";
 	$subject = "Message from: Moyatajna.ru";
 	$headers = "From: contact@moyatajna.ru";
 	$txt = "You have new message from site www.moyatajna.ru\nContact name: " . $name . "\nEmail: " . $email . "\nMessage: " . $message;
