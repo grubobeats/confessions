@@ -33,7 +33,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li style="font-weight: 700"><a href="add_post.php"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
+        <li><a href="add_post.php" style="color: #31708f; font-weight: 600"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
         <div class="navbar-form navbar-left" role="search">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search by ID" id="search_input">
@@ -51,22 +51,7 @@
 
 <div class="container-fluid">
     <div class="row">
-
-      <div class="col-sm-2">
-        <div class="affix" data-spy="affix" data-offset-top="0" data-offset-bottom="0" style="width: 200px">
-          <div style="margin-top: 80px"></div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Like us</h3>
-            </div>
-            <div class="panel-body">
-              Panel content
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="col-sm-8">
+      <div class="col-sm-offset-3 col-sm-6">
         <div class="row">
           <div class="col-sm-12" style="padding-top: 80px;">
             <div class="jumbotron">

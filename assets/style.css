@@ -47,7 +47,17 @@ blockquote {
 		display: block;
 		margin-top: 10px
 	}
-	#click_comment {
-		padding: 8px 12px;
-	}
 }
+
+.btn-group > .btn {
+	font-size: 15px;
+}
+.badge {
+	display: block;
+	margin-top: 10px
+}
+.vblock {
+  display: block;
+	margin-top: 4px;
+	margin-bottom: 12px 
+} 
