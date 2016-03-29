@@ -7,14 +7,14 @@ window.scrollTo(0,1);
 
 function postadder(caller)  {
 	var address = "assets/ajax_add_post.php";
-	$(caller).html("Adding confession...");
+	$(caller).html("Добавьте признание...");
 	var content_text = document.getElementById("inputContent").value;
 	$.ajax({
 		type: 	"POST",
 		url: 	address,
 		data: { content: content_text },
 		success: function (msg) { 
-			$(caller).html("Confession added."); 
+			$(caller).html("Признание добавлено."); 
 			$(caller).attr("disabled", "disabled");
 			var post_id = msg;
 			var address = "sucess.php?pid=" + post_id;
@@ -30,13 +30,13 @@ function likePost(caller)  {
 	var post_id = caller.parentElement.getAttribute('post-id');
 	//alert(post_id);
 	var address = "assets/ajax_like.php";
-	$(caller).find("span").html("Thanks.");
+	$(caller).find("span").html("Спасибо.");
 	$.ajax({
 		type: 	"POST",
 		url: 	address,
 		data: { data: post_id },
 		success: function (msg) { 
-			$(caller).html("<b>You approved.</b> <span class='badge'>"+ msg + "</span>"); 
+			$(caller).html("<b>Вы За</b> <span class='badge'>"+ msg + "</span>"); 
 			$(caller).parent().parent().children().children(".like_dislike").attr("disabled", "disabled");
 		},
 		error: 	function () {
@@ -49,13 +49,13 @@ function dislike(caller)  {
 	var post_id = caller.parentElement.getAttribute('post-id');
 	//alert(post_id);
 	var address = "assets/ajax_dislike.php";
-	$(caller).find("span").html("Guilty!");
+	$(caller).find("span").html("Спасибо!");
 	$.ajax({
 		type: 	"POST",
 		url: 	address,
 		data: { data: post_id },
 		success: function (msg) { 
-			$(caller).html("<b>You judged it.</b> <span class='badge'>"+ msg + "</span>"); 
+			$(caller).html("<b>Вы против</b> <span class='badge'>"+ msg + "</span>"); 
 			$(caller).parent().parent().children().children(".like_dislike").attr("disabled", "disabled");
 
 		},
@@ -79,10 +79,10 @@ function postComment(unique_id)  {
 	var address = "assets/ajax_add_comment.php";
 	
 	if (comment === "") {
-		alert("Please, write comment.")
+		alert("Пожалуйста, оставьте комментарий.")
 	} else {
-		button.innerHTML = "Adding...";
-		$("#table").html("<tr><td>Loading comment...</td></tr>");
+		button.innerHTML = "Добавление...";
+		$("#table").html("<tr><td>Загрузка комментария...</td></tr>");
 		$.ajax({
 			type: 	"POST",
 			url: 	address,
@@ -90,7 +90,7 @@ function postComment(unique_id)  {
 			success: function (resoult) { 
 				$("#table").html(resoult); 
 				button.disabled = true;
-				button.innerHTML = "Thank you for your comment.";
+				button.innerHTML = "Спасибо!";
 				$(if_no_comment).hide();
 			},
 			error: 	function () {

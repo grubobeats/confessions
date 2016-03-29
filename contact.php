@@ -15,7 +15,7 @@ if (isset($_POST["sendmail"])) {
 
 	mail($to,$subject,$txt, $headers);
 
-	$success =  "<p class='text-success'>Your message sent successfully.</p>";
+	$success =  "<p class='text-success'>Ваше сообщение отправлено.</p>";
 }
 
 
@@ -25,7 +25,7 @@ if (isset($_POST["sendmail"])) {
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
 						  <li><a href="index.php">Популярные признания</a></li>
-						  <li class="active">Добавьте ваше признание</li>
+						  <li class="active">Контакты</li>
 						</ol>
 					</div>
 				</div>
@@ -33,31 +33,30 @@ if (isset($_POST["sendmail"])) {
 					<div class="col-sm-12">
 						<div class="panel panel-success wow fadeIn" data-wow-duration="3s">
 						  	<div class="panel-heading">
-						    	<h3 class="panel-title">Contact</h3>
+						    	<h3 class="panel-title">Контакты</h3>
 						  	</div>
 							<div class="panel-body">
 							  	 <div class="col-sm-4">
 							  	 	<legend>Info:</legend>
-								    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								    tempor incididunt ut labore et dolore magna aliqua.
+								    <p>Для получения информации о этом сайте и условиях размещения рекламы, пожалуйста, заполните форму обратной связи.
 								</div>
 							  	<div class="col-sm-8">
 							  	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> 
-								    <legend>Your message:</legend>
+								    <legend>Форма обратной связи:</legend>
 		
 									<div class="form-group">
-										<label>Your name:</label>
+										<label>Ваше имя:</label>
 										<input name="name" id="name" class="form-control" rows="3" required="required"></input>
 									</div>
 									<div class="form-group">
-										<label>Your e-mail:</label>
+										<label>E-mail:</label>
 										<input name="email" id="email" class="form-control" rows="3" required="required"></input>
 									</div>
 									<div class="form-group">
-										<label>Message:</label>
+										<label>Ваше сообщение:</label>
 										<textarea name="message" id="message" class="form-control" rows="3" required="required"></textarea>
 									</div>
-									<button type="submit" name="sendmail" class="btn btn-primary pull-right">Ok, contact us</button>
+									<button type="submit" name="sendmail" class="btn btn-primary pull-right">Свяжитесь с нами</button>
 									<?php $success ?>
 							    </form>
 							    </div> 

@@ -22,7 +22,7 @@ include "header.php";
 							<div class="panel-body">
 							  	 <div class="col-sm-4">
 							  	 	<legend>Защита личных данных:</legend>
-								    <p>We have unique and the most simple privacy policy. We do not store any data from your computer, we do not use cookies. <strong>All your confessions are 100% anonymous.</strong> You will be the only one who will know who wrote this confession.
+								    <p>Мы используем наиболее простую и эффективную защиту личных данных. Мы не сохраняем данные и не используем cookies. <b>Все Ваши признания 100% анонимны.</b> Признания, содержащие ненормативную лексику и угрозы будут удалены с сайта.
 								</div>
 							  	<div class="col-sm-8">
 								    <legend>Признание:</legend>

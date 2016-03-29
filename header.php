@@ -2,11 +2,14 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Моя тайна: Add your confession</title>
+  <title>Моя тайна: Анонимные признания</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta name="keywords" content="признания, анонимные признания, секреты, мой секрет, это мой секрет, как поделиться анонимно, посекретувсемусвету, по секрету всему свету, моя тайна, как признаться, наболело, выговориться">
+  <meta name="description" content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
   
 </head>
 <body>
@@ -33,10 +36,10 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="add_post.php" style="color: #31708f; font-weight: 600"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
+        <li style="add_confession"><a href="add_post.php" style="color: #31708f; font-weight: 600"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
         <div class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search by ID" id="search_input">
+            <input type="text" class="form-control" placeholder="Поиск по ID" id="search_input">
           </div>
           <button type="submit" class="btn btn-default mysearch" onclick="searchById()"><span class="glyphicon glyphicon-search"></span>
  </button>

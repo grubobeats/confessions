@@ -61,3 +61,14 @@ blockquote {
 	margin-top: 4px;
 	margin-bottom: 12px 
 } 
+
+.add_confession {
+	animation: mborder 5s infinite;
+	border-bottom: 5px solid #31708f;
+}
+
+@keyframes mborder {
+  	0%   { border-color: rgba(0, 255, 255, 1); }
+    50%  { border-color: rgba(0, 255, 255, 0); }
+    100% { border-color: rgba(0, 255, 255, 1); }
+}
