@@ -59,21 +59,26 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 								<div class="row">
 									<div class="col-sm-7">
 										<label>Что ты думаешь?</label>
-										<div class="btn-group btn-group-justified" role="group" aria-label="..." >
+										<div class="btn-group btn-group-justified hidden-xs" role="group" aria-label="..." >
 											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
-												
 												<button type="button" class="btn btn-default like_dislike" id="like" class="like" onclick="likePost(this)"><i class="fa fa-thumbs-up"></i> За <span class="badge" id="likes_num"><?php echo $likes;?></span></button>
-												
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
-												
 												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i> Против <span class="badge"><?php echo $dislikes;?></span></button>
-												
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
-												
-												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> Комментарии <span class="badge"><?php echo $get_comments;?></span></button>
-												
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
+											</div>
+										</div>
+										<div class="btn-group btn-group-justified visible-xs" role="group" aria-label="..." >
+											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
+												<button type="button" class="btn btn-default like_dislike" id="like" class="like" onclick="likePost(this)"><i class="fa fa-thumbs-up"></i><span class="badge" id="likes_num"><?php echo $likes;?></span></button>
+											</div>
+											<div class="btn-group" role="group" post-id="<?php echo $post_id;?>">
+												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i><span class="badge"><?php echo $dislikes;?></span></button>
+											</div>
+											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment" style="padding: 6px 12px;"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
 											</div>
 										</div>
 									</div>
@@ -81,13 +86,19 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 										<label class="pull-right">Поделиться:</label>
 										<div class="btn-group btn-group-justified" role="group" aria-label="...">
 											<div class="btn-group" role="group">
-											<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Moyatajna.ru. Признания - Не думай, скажи!"><button type="button" class="btn btn-default"><i class="fa fa-facebook vblock"></i> Facebook</button></a>
+											<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Moyatajna.ru. Признания - Не думай, скажи!">
+											<button type="button" class="btn btn-link text-center"><i class="fa fa-facebook vblock"></i>Facebook</button>
+											</a>
 											</div>											
 											<div class="btn-group" role="group">
-											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>"><button type="button" class="btn btn-default"><i class="fa fa-vk vblock"></i> VKontakte</button></a>
+											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/favi200x200.png&title=#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
+											<button type="button" class="btn btn-link"><i class="fa fa-vk  vblock"></i>VKontakte</button>
+											</a>
 											</div>
 											<div class="btn-group" role="group">
-											<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>"><button type="button" class="btn btn-default"><i class="fa fa-twitter vblock"></i> Twitter</button></a>
+											<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>">
+											<button type="button" class="btn btn-link"><i class="fa fa-twitter vblock"></i>Twitter</button>
+											</a>
 											</div>
 										</div>
 									</div>

@@ -7,10 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-
   <meta name="keywords" content="признания, анонимные признания, секреты, мой секрет, это мой секрет, как поделиться анонимно, посекретувсемусвету, по секрету всему свету, моя тайна, как признаться, наболело, выговориться">
   <meta name="description" content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="http://moyatajna.ru/images/favi200x200.png">
+
+  <meta property="fb:app_id" content="789260441218453"/>
+  <meta property="og:title" content="Моя тайна: Анонимные признания" />
+  <meta property="og:type" content="признания" />
+  <meta property="og:url" content="http://www.moyatajna.ru" />
+  <meta property="og:image" content="http://moyatajna.ru/images/favi200x200.png" />
+  <meta property="og:site_name" content="Моя тайна" />
+  <meta property="fb:admins" content="vladan.g.paunovic" />
+  
+  <meta property="og:description"
+        content="Моя тайна: Анонимные признания." />
 </head>
 <body>
 
@@ -54,16 +66,26 @@
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-offset-3 col-sm-6">
+      <div class="col-sm-3">
+      <div class="empty80px"></div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- First -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-6825675920854864"
+               data-ad-slot="3861587232"
+               data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+      </div>
+      <div class="col-sm-6">
         <div class="row">
-          <div class="col-sm-12" style="padding-top: 80px;">
+          <div class="col-sm-12 empty80px" >
             <div class="jumbotron">
-              <h1>
-                Признания
-              </h1>
-              <blockquote>
+              <img class="logo" src="images/logo.svg">
+                <h2>Признания</h2>
                 <p>Не думай, скажи!</p>
-              </blockquote>
             </div>
           </div>
         </div>

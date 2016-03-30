@@ -1,14 +1,14 @@
 body {
 	background-color: #2c3e50;
-	background-image: url("https://wallpaperscraft.com/image/board_black_line_texture_background_wood_55220_2560x1080.jpg");
+	background-image: url("http://www.moyatajna.ru/images/body_background.jpg");
 }
 
 .jumbotron {
-	background-image: url("http://cdn.c.photoshelter.com/img-get2/I0000kV31NiNeroE/fit=1000x750/Moscow-River-Winter.jpg");
-	background-size: 100%;
-	background-position: 0 -54;
-	padding-bottom: 150px;
+	background-image: url("https://www.ucxchange.com/wp-content/uploads/2013/10/curvy-bag-background.jpg");
+	background-size: 250%;
+	background-position: 0 0;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 
 .jumbotron h1 {
@@ -47,6 +47,13 @@ blockquote {
 		display: block;
 		margin-top: 10px
 	}
+	#click_comment {
+		padding: 6x 12x !important;
+	}
+	.empty80px {
+		margin-top: 37px;
+		padding-top: 0px;
+	}
 }
 
 .btn-group > .btn {
@@ -71,4 +78,17 @@ blockquote {
   	0%   { border-color: rgba(0, 255, 255, 1); }
     50%  { border-color: rgba(0, 255, 255, 0); }
     100% { border-color: rgba(0, 255, 255, 1); }
+}
+
+#click_comment {
+	padding: 9px 12px;
+}
+
+.logo {
+	width: 116px;
+}
+
+.empty80px {
+	margin-top: 80px;
+	padding-top: 0px;
 }

@@ -69,7 +69,7 @@ $resoult = mysqli_query($conn, $read_posts);
 												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i> Против<span class="badge"><?php echo $dislikes;?></span></button>
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
-												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> Комментарии<span class="badge"><?php echo $get_comments;?></span></button>
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
 											</div>
 										</div>
 										<div class="btn-group btn-group-justified visible-xs" role="group">
@@ -80,7 +80,7 @@ $resoult = mysqli_query($conn, $read_posts);
 												<button type="button" class="btn btn-default like_dislike" onclick="dislike(this)"><i class="fa fa-thumbs-down"></i> <span class="badge"><?php echo $dislikes;?></span></button>
 											</div>
 											<div class="btn-group" role="group" post-id="<?php echo $unique_id;?>">
-												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
+												<button type="button" class="btn btn-default" onclick="comment(this)" id="click_comment" style="padding: 6px 12px;"><i class="fa fa-comment-o"></i> <span class="badge"><?php echo $get_comments;?></span></button>
 											</div>
 										</div>
 									</div>
@@ -93,7 +93,7 @@ $resoult = mysqli_query($conn, $read_posts);
 											</a>
 											</div>											
 											<div class="btn-group" role="group">
-											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>">
+											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/favi200x200.png&title=#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
 											<button type="button" class="btn btn-link"><i class="fa fa-vk  vblock"></i>VKontakte</button>
 											</a>
 											</div>
