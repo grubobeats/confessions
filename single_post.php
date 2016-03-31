@@ -91,7 +91,7 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 											</a>
 											</div>											
 											<div class="btn-group" role="group">
-											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/favi200x200.png&title=#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
+											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/sm_up.jpg&title=#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
 											<button type="button" class="btn btn-link"><i class="fa fa-vk  vblock"></i>VKontakte</button>
 											</a>
 											</div>

@@ -11,18 +11,18 @@
   <meta name="description" content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="http://moyatajna.ru/images/favi200x200.png">
+  <link rel="icon" type="image/png" href="http://moyatajna.ru/images/favi.png">
 
-  <meta property="fb:app_id" content="789260441218453"/>
-  <meta property="og:title" content="Моя тайна: Анонимные признания" />
-  <meta property="og:type" content="признания" />
-  <meta property="og:url" content="http://www.moyatajna.ru" />
-  <meta property="og:image" content="http://moyatajna.ru/images/favi200x200.png" />
-  <meta property="og:site_name" content="Моя тайна" />
-  <meta property="fb:admins" content="vladan.g.paunovic" />
-  
-  <meta property="og:description"
-        content="Моя тайна: Анонимные признания." />
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://www.moyatajna.ru" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Моя тайна: Анонимные признания" />
+  <meta property="og:description"   content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно." />
+  <meta property="og:image"         content="http://moyatajna.ru/images/sm_up.jpg" />
+
+
+
 </head>
 <body>
 
@@ -63,12 +63,26 @@
 
 
 <!-- BODY STARTS HERE: -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3  text-center">
       <div class="empty80px"></div>
-        
+          <div class="fb-share-button" 
+    data-href="http://www.moyatajna.ru/index.php" 
+    data-layout="button_count">
+  </div>
       </div>
       <div class="col-sm-6">
         <div class="row">
