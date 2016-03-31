@@ -14,7 +14,9 @@
 		//echo "Connected successfully to database: " . $database;
 	}
 
-	$insert_comments = "INSERT INTO comments (comment, unique_post_id, date, time) VALUES ('$comment', '$post_id', CURDATE(), CURTIME());";
+	$comment_id = rand(10000,1000000);
+
+	$insert_comments = "INSERT INTO `comments` (comment, unique_post_id, date, time, comment_id) VALUES ('$comment', '$post_id', CURDATE(), CURTIME(), '$comment_id');";
 	$read_comments = "SELECT * FROM `comments` WHERE unique_post_id = '$post_id' ORDER BY `id` DESC;";
 
 	if (mysqli_query($conn, $insert_comments)) {
@@ -23,7 +25,7 @@
 		$chat_id = "-141769525";
 		$text = $txt . " To delate post follow this link: www.example.com";
 
-		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=`New comment on post ID: " . $post_id . "` ```---``` Comment: ". $comment ."```---```&parse_mode=Markdown&disable_web_page_preview=true";
+		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=`New comment on post ID: " . $post_id . "` ```---``` Comment: ". $comment ."```---```To delete comment [click here](http://www.moyatajna.ru/assets/delete_comment.php?id=" . $comment_id .") &parse_mode=Markdown&disable_web_page_preview=true";
 		file_get_contents($bot_url);
 	} else {
 	    echo "Error: " . $insert_comments . "<br>" . mysqli_error($conn);

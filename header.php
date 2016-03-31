@@ -19,7 +19,7 @@
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Моя тайна: Анонимные признания" />
   <meta property="og:description"   content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно." />
-  <meta property="og:image"         content="http://moyatajna.ru/images/sm_up.jpg" />
+  <meta property="og:image"         content="http://moyatajna.ru/images/sm.jpg" />
 
 
 
