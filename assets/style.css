@@ -5,7 +5,7 @@ body {
 
 .jumbotron {
 	background-image: url("https://www.ucxchange.com/wp-content/uploads/2013/10/curvy-bag-background.jpg");
-	background-size: 250%;
+	background-size: 280%;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -85,7 +85,7 @@ blockquote {
 }
 
 .logo {
-	width: 116px;
+	width: 250px;
 }
 
 .empty80px {

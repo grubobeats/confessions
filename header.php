@@ -68,24 +68,15 @@
     <div class="row">
       <div class="col-sm-3">
       <div class="empty80px"></div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- First -->
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-6825675920854864"
-               data-ad-slot="3861587232"
-               data-ad-format="auto"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+        
       </div>
       <div class="col-sm-6">
         <div class="row">
           <div class="col-sm-12 empty80px" >
             <div class="jumbotron">
-              <img class="logo" src="images/logo.svg">
-                <h2>Признания</h2>
-                <p>Не думай, скажи!</p>
+              <img class="logo" src="images/logo.png">
+        <!--         <h2>Моя тайна</h2>
+                <p>Не думай, скажи!</p> -->
             </div>
           </div>
         </div>

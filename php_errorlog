@@ -1,0 +1,6 @@
+[26-Mar-2016 07:58:18 CST6CDT] PHP Fatal error:  require(): Failed opening required '/assets/config.php' (include_path='.:/usr/local/php56/pear') in /home/beatmark/public_html/moyatajna.ru/index.php on line 2
+[26-Mar-2016 07:59:19 CST6CDT] PHP Fatal error:  require(): Failed opening required '/assets/config.php' (include_path='.:/usr/local/php56/pear') in /home/beatmark/public_html/moyatajna.ru/index.php on line 2
+[26-Mar-2016 07:59:21 CST6CDT] PHP Fatal error:  require(): Failed opening required '/assets/config.php' (include_path='.:/usr/local/php56/pear') in /home/beatmark/public_html/moyatajna.ru/index.php on line 2
+[26-Mar-2016 08:09:32 CST6CDT] PHP Fatal error:  require(): Failed opening required '/assets/config.php' (include_path='.:/usr/local/php56/pear') in /home/beatmark/public_html/moyatajna.ru/add_post.php on line 2
+[26-Mar-2016 13:38:09 CST6CDT] PHP Fatal error:  require(): Failed opening required 'footer.php' (include_path='.:/usr/local/php56/pear') in /home/beatmark/public_html/moyatajna.ru/index.php on line 120
+[26-Mar-2016 16:53:10 CST6CDT] PHP Parse error:  syntax error, unexpected '$txt' (T_VARIABLE) in /home/beatmark/public_html/moyatajna.ru/contact.php on line 14
