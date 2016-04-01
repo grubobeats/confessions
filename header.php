@@ -79,10 +79,7 @@
     <div class="row">
       <div class="col-sm-3  text-center">
       <div class="empty80px"></div>
-          <div class="fb-share-button" 
-    data-href="http://www.moyatajna.ru/index.php" 
-    data-layout="button_count">
-  </div>
+			<div class="fb-like" data-href="http://www.moyatajna.ru/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
       </div>
       <div class="col-sm-6">
         <div class="row">
