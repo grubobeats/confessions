@@ -34,7 +34,7 @@ if (!$conn) {
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 <!-- Wow.js -->
-<<script src="assets/wow.js"></script>
+<script src="assets/wow.js"></script>
 
 <!-- Animate.css -->
 <link rel="stylesheet" type="text/css" href="assets/animate.css">

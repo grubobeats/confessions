@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="keywords" content="признания, анонимные признания, секреты, мой секрет, это мой секрет, как поделиться анонимно, посекретувсемусвету, по секрету всему свету, моя тайна, как признаться, наболело, выговориться">
-  <meta name="description" content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
+  <meta name="description" content="Вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="http://moyatajna.ru/images/favi.png">
@@ -18,7 +18,7 @@
   <meta property="og:url"           content="http://www.moyatajna.ru" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Моя тайна: Анонимные признания" />
-  <meta property="og:description"   content="#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно." />
+  <meta property="og:description"   content="Вэбсайт для анонимных признаний. Поделись своим секретом анонимно." />
   <meta property="og:image"         content="http://moyatajna.ru/images/sm.jpg" />
 
 
@@ -27,7 +27,7 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -37,7 +37,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Моя тайна.ру</a>
+      <a class="navbar-brand" href="index.php">
+        Моя тайна.ру
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,9 +53,10 @@
         <li style="add_confession"><a href="add_post.php" style="color: #31708f; font-weight: 600"><i class="fa fa-plus-circle"></i> Добавьте ваше признание</a></li>
         <div class="navbar-form navbar-left" role="search">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Поиск по ID" id="search_input">
+            <input type="text" class="form-control" placeholder="Поиск по ID" id="search_input" onkeydown="if (event.keyCode == 13)
+                        document.getElementById('search_button').click()">
           </div>
-          <button type="submit" class="btn btn-default mysearch" onclick="searchById()"><span class="glyphicon glyphicon-search"></span>
+          <button type="submit" class="btn btn-default mysearch" onclick="searchById()" id="search_button"><span class="glyphicon glyphicon-search"></span>
  </button>
         </div>
       </ul>

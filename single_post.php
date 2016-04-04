@@ -86,18 +86,18 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 										<label class="pull-right">Поделиться:</label>
 										<div class="btn-group btn-group-justified" role="group" aria-label="...">
 											<div class="btn-group" role="group">
-											<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Moyatajna.ru. Признания - Не думай, скажи!">
-											<button type="button" class="btn btn-link text-center"><i class="fa fa-facebook vblock"></i>Facebook</button>
+											<a href="https://www.facebook.com/sharer/sharer.php?u=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&t=Делись своими секретами и читай откровения других анонимно! Самые невероятные признания." target="_blank">
+											<button type="button" class="btn btn-link text-center" onclick="shareCounter('Facebook')"><i class="fa fa-facebook vblock"></i>Facebook</button>
 											</a>
 											</div>											
 											<div class="btn-group" role="group">
-											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/sm.jpg&title=#1 Русский вэбсайт для анонимных признаний. Поделись своим секретом анонимно.">
-											<button type="button" class="btn btn-link"><i class="fa fa-vk  vblock"></i>VKontakte</button>
+											<a href="http://vk.com/share.php?url=http://www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&image=http://www.moyatajna.ru/images/sm.jpg&title=Делись своими секретами и читай откровения других анонимно! Самые невероятные признания." target="_blank">
+											<button type="button" class="btn btn-link" onclick="shareCounter('VKontakte')"><i class="fa fa-vk  vblock"></i>VKontakte</button>
 											</a>
 											</div>
 											<div class="btn-group" role="group">
-											<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>">
-											<button type="button" class="btn btn-link"><i class="fa fa-twitter vblock"></i>Twitter</button>
+											<a href="https://twitter.com/share?url=moyatajna.ru/single_post.php?pid=<?php echo $unique_id; ?>&via=Moyatajna.ru&text=Признания - Не думай, скажи! www.moyatajna.ru/single_post.php?pid=<?php echo $unique_id ?>" target="_blank">
+											<button type="button" class="btn btn-link" onclick="shareCounter('Twitter')" taget="_blank"><i class="fa fa-twitter vblock"></i>Twitter</button>
 											</a>
 											</div>
 										</div>

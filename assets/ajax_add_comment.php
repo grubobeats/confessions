@@ -25,7 +25,7 @@
 		$chat_id = "-141769525";
 		$text = $txt . " To delate post follow this link: www.example.com";
 
-		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=`New comment on post ID: " . $post_id . "` ```---``` Comment: ". $comment ."```---```To delete comment [click here](http://www.moyatajna.ru/assets/delete_comment.php?id=" . $comment_id .") &parse_mode=Markdown&disable_web_page_preview=true";
+		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=`New comment on post ID: " . $post_id . "`, to open post [click here](http://www.moyatajna.ru/single_page.php?pid=" . $post_id . ") ```---``` Comment: ". $comment ."```---```To delete comment [click here](http://www.moyatajna.ru/assets/delete_comment.php?id=" . $comment_id .") &parse_mode=Markdown&disable_web_page_preview=true";
 		file_get_contents($bot_url);
 	} else {
 	    echo "Error: " . $insert_comments . "<br>" . mysqli_error($conn);

@@ -34,7 +34,7 @@
 		$chat_id = "-141769525";
 		$text = $txt . " To delate post follow this link: www.example.com";
 
-		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=`New confession ID: " . $unique_id1 . "` ```---``` Content: ". $content ."```---```To delate post [click here](http://www.moyatajna.ru/assets/delete.php?id=" . $unique_id1 .") &parse_mode=Markdown&disable_web_page_preview=true";
+		$bot_url = "https://api.telegram.org/" . $bot_token . "/sendMessage?chat_id=" . $chat_id . "&text=New confession, [click to open](http://www.moyatajna.ru/single_post.php?pid=" . $unique_id1 . ") ```---``` Content: ". $content ."```---```To delete post [click here](http://www.moyatajna.ru/assets/delete.php?id=" . $unique_id1 .") &parse_mode=Markdown&disable_web_page_preview=true";
 		file_get_contents($bot_url);
 
 		echo "<script>window.close();</script>";

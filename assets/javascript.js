@@ -116,3 +116,30 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-75612377-1', 'auto');
 ga('send', 'pageview');
+
+
+// When press enter on textbox
+
+$("#search_input").keyup(function(event){
+    if(event.keyCode == 13){
+        var post_id = document.getElementById("search_input").value;
+		var address = "single_post.php?pid=" + post_id;
+		window.location.href= address;
+    }
+});
+
+
+// Shereing notifier
+
+function shareCounter(place)  {
+	var button = document.getElementById("add_comment");
+	var address = "assets/ajax_sharer.php";
+
+	$.ajax({
+		type: 	"POST",
+		url: 	address,
+		data: { network: place },
+		success: function (resoult) {}
+	});
+	
+}

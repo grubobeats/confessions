@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Design" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="288px" height="288px" viewBox="0 0 288 288" enable-background="new 0 0 288 288" xml:space="preserve">
+<g id="XMLID_3166_">
+	
+		<radialGradient id="XMLID_2_" cx="59.8936" cy="3684.5781" r="98.6582" gradientTransform="matrix(1.4609 0 0 0.1 56.6232 -135.2292)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#787878"/>
+		<stop  offset="0.0672" style="stop-color:#8F8F8F"/>
+		<stop  offset="0.1841" style="stop-color:#B2B2B2"/>
+		<stop  offset="0.309" style="stop-color:#CECECE"/>
+		<stop  offset="0.4425" style="stop-color:#E4E4E4"/>
+		<stop  offset="0.5889" style="stop-color:#F3F3F3"/>
+		<stop  offset="0.7575" style="stop-color:#FCFCFC"/>
+		<stop  offset="1" style="stop-color:#FFFFFF"/>
+	</radialGradient>
+	<ellipse id="XMLID_5102_" opacity="0.25" fill="url(#XMLID_2_)" cx="144.121" cy="233.23" rx="144.121" ry="9.865"/>
+	<g id="XMLID_3230_">
+		
+			<radialGradient id="XMLID_3_" cx="-220.9321" cy="395.6182" r="307.6733" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.042 -336.7842)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.2347" style="stop-color:#B4B4B4"/>
+			<stop  offset="0.3827" style="stop-color:#9EA1A4"/>
+			<stop  offset="0.5714" style="stop-color:#F2F3F6"/>
+			<stop  offset="0.7041" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.9235" style="stop-color:#9EA1A4"/>
+		</radialGradient>
+		<path id="XMLID_5098_" fill="url(#XMLID_3_)" d="M79.587,57.869c27.096-27.096,71.027-27.096,98.124,0
+			c21.874,21.875,26.078,54.718,12.634,80.822l10.957,40.893l-40.895-10.957c-26.102,13.446-58.945,9.241-80.82-12.635
+			C52.491,128.896,52.491,84.965,79.587,57.869 M72.947,51.229c-30.714,30.713-30.714,80.689,0,111.404
+			c23.439,23.438,58.538,29.642,88.411,15.969l37.512,10.054l15.712,4.209l-4.21-15.71L200.32,139.64
+			c13.673-29.873,7.471-64.972-15.97-88.411C153.636,20.515,103.661,20.515,72.947,51.229L72.947,51.229z"/>
+		<g id="XMLID_3231_">
+			
+				<linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="-257.9063" y1="386.1826" x2="56.5596" y2="675.0258" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.042 -336.7842)">
+				<stop  offset="0" style="stop-color:#FF0000"/>
+				<stop  offset="0.1786" style="stop-color:#FF6900"/>
+				<stop  offset="0.3265" style="stop-color:#00F100"/>
+				<stop  offset="0.4796" style="stop-color:#00A9D6"/>
+				<stop  offset="0.6786" style="stop-color:#0000FF"/>
+				<stop  offset="0.8214" style="stop-color:#FE00A7"/>
+				<stop  offset="1" style="stop-color:#FF0000"/>
+			</linearGradient>
+			<path id="XMLID_4713_" fill="url(#XMLID_4_)" d="M177.711,57.869c21.874,21.873,26.078,54.717,12.628,80.818l10.959,40.891
+				l-40.895-10.959c-26.099,13.453-58.943,9.246-80.817-12.628c-9.849-9.849-16.13-21.927-18.81-34.621
+				c-4.71-22.192,1.56-46.251,18.81-63.501c17.251-17.251,41.31-23.521,63.501-18.81C155.781,41.737,167.861,48.019,177.711,57.869z
+				"/>
+		</g>
+		<g id="XMLID_3232_">
+			
+				<linearGradient id="XMLID_5_" gradientUnits="userSpaceOnUse" x1="-157.939" y1="547.2305" x2="198.8952" y2="643.0823" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.042 -336.7842)">
+				<stop  offset="0" style="stop-color:#FF0000"/>
+				<stop  offset="0.1786" style="stop-color:#FF6900"/>
+				<stop  offset="0.3265" style="stop-color:#00F100"/>
+				<stop  offset="0.4796" style="stop-color:#00A9D6"/>
+				<stop  offset="0.6786" style="stop-color:#0000FF"/>
+				<stop  offset="0.8214" style="stop-color:#FE00A7"/>
+				<stop  offset="1" style="stop-color:#FF0000"/>
+			</linearGradient>
+			<path id="XMLID_4443_" fill="url(#XMLID_5_)" d="M201.298,179.578l-40.895-10.959c-26.099,13.453-58.943,9.246-80.817-12.628
+				c-9.849-9.849-16.13-21.927-18.81-34.621c10.882-7.061,23.84-11.167,37.785-11.167c30.922,0,57.121,20.248,66.071,48.216
+				L201.298,179.578z"/>
+		</g>
+		<g id="XMLID_3233_">
+			
+				<linearGradient id="XMLID_6_" gradientUnits="userSpaceOnUse" x1="421.1836" y1="780.5039" x2="-165.0502" y2="513.3986" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.042 -336.7842)">
+				<stop  offset="0" style="stop-color:#FF0000"/>
+				<stop  offset="0.1786" style="stop-color:#FF6900"/>
+				<stop  offset="0.3265" style="stop-color:#00F100"/>
+				<stop  offset="0.4796" style="stop-color:#00A9D6"/>
+				<stop  offset="0.6786" style="stop-color:#0000FF"/>
+				<stop  offset="0.8214" style="stop-color:#FE00A7"/>
+				<stop  offset="1" style="stop-color:#FF0000"/>
+			</linearGradient>
+			<path id="XMLID_3547_" fill="url(#XMLID_6_)" d="M177.711,57.869c21.874,21.873,26.078,54.717,12.628,80.818l10.959,40.891
+				l-21.161-36.664c-27.968-8.95-48.216-35.149-48.216-66.071c0-13.945,4.106-26.903,11.167-37.784
+				C155.781,41.737,167.861,48.019,177.711,57.869z"/>
+		</g>
+		
+			<radialGradient id="XMLID_7_" cx="-79.0972" cy="550.6533" r="202.0502" gradientTransform="matrix(0.7071 -0.7071 0.7071 0.7071 -164.042 -336.7842)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.75" style="stop-color:#000000"/>
+		</radialGradient>
+		<path id="XMLID_3544_" opacity="0.4" fill="url(#XMLID_7_)" d="M71.208,131.801c-4.711-22.191,1.559-46.25,18.81-63.501
+			s41.31-23.521,63.502-18.81c10.407,2.197,20.4,6.82,29.092,13.841c-1.524-1.883-3.151-3.711-4.901-5.463
+			c-9.85-9.85-21.93-16.131-34.623-18.81c-22.192-4.711-46.25,1.559-63.501,18.81c-17.25,17.25-23.521,41.31-18.81,63.501
+			c2.68,12.694,8.961,24.772,18.81,34.621c1.752,1.753,3.581,3.378,5.464,4.903C78.028,152.203,73.405,142.21,71.208,131.801z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 81.333 220.9043)" fill="#31708F" font-family="'MyriadPro-Bold'" font-size="22.7579">МОЯ ТАЙНА</text>
+<text transform="matrix(1 0 0 1 82.3325 231.9805)" fill="#69A3B2" font-family="'MyriadPro-Bold'" font-size="9.9822">АНОНИМНЫЕ ПРИЗНАНИЯ</text>
+</svg>

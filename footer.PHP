@@ -7,5 +7,12 @@
 		<p class="text-muted text-right" style="margin-bottom: 55px !important;">Moyatajna.ru 2016</p>
 	</div>
 </div>
+
+<footer class="navbar-default navbar-fixed-bottom">
+      <div class="container text-center">
+        <p><a href="add_post.php" style="color: #31708f; font-weight: 600"><i class="fa fa-plus-circle"></i> Добавьте ваше признание (анонимно)</a></p>
+      </div>
+</footer>
+
 </body>
 </html>
