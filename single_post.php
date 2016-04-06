@@ -17,7 +17,7 @@ $resoult_comments = mysqli_query($conn, $read_comments);
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="index.php">Популярные признания</a></li>
+						  <li><a href="index.php">Моя тайна.ру</a></li>
 						  <li class="active"><?php echo "#" . $unique_post_id; ?></li>
 						</ol>
 					</div>

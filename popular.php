@@ -5,7 +5,7 @@ include "header.php";
 
 // Read from database
 
-$read_posts = "SELECT * FROM `posts` ORDER BY `id` DESC";
+$read_posts = "SELECT (`likes` + `dislikes`) as popular, `unique_id`, `content`, `comments_counter`, `date`, `time`, `id`, `likes`, `dislikes`  FROM `posts` ORDER BY `popular` DESC";
 $resoult = mysqli_query($conn, $read_posts);
 
 
@@ -17,7 +17,7 @@ $resoult = mysqli_query($conn, $read_posts);
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-						  <li class="active">Новые признания</li>
+						  <li class="active">Популярные признания</li>
 						</ol>
 					</div>
 				</div>

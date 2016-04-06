@@ -8,7 +8,7 @@ include "header.php";
 				<div class="row">
 					<div class="col-sm-12">
 						<ol class="breadcrumb">
-						  <li><a href="index.php">Популярные признания</a></li>
+						  <li><a href="index.php">Моя тайна.ру</a></li>
 						  <li class="active">Добавьте ваше признание</li>
 						</ol>
 					</div>
